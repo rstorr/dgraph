@@ -158,7 +158,7 @@ func GetTokenizers(names []string) ([]Tokenizer, error) {
 	for _, name := range names {
 		t, found := GetTokenizer(name)
 		if !found {
-			return nil, errors.Errorf("Invalid tokenizer %s", name)
+			return nil, errors.Errorf("Invalid tokenizer %s.", name)
 		}
 		tokenizers = append(tokenizers, t)
 	}
