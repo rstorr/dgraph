@@ -29,12 +29,12 @@ import (
 )
 
 var (
-	// Upgrade is the sub-command used to upgrade dgraph cluster.
+	// Upgrade is the sub-command used to upgrade dgraph cluster
 	Upgrade x.SubCommand
 	// zeroVersion represents &version{major: 0, minor: 0, patch: 0}
 	zeroVersion = &version{}
 	// allChanges contains all the changes ever introduced since the beginning of dgraph in the form
-	// of a list of change sets.
+	// of a list of change sets
 	allChanges changeList
 )
 
